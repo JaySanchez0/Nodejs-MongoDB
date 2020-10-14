@@ -21,6 +21,8 @@ server.post("/pay",(req,res)=>{
     res.send("");
 });
 
-server.listen(80,"0.0.0.0",()=>{
+var port = process.env.PORT || 80;
+
+server.listen(port,"0.0.0.0",()=>{
     console.log("Listen");
 });
